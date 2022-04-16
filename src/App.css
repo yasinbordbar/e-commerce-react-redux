@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+* {
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+.dark-theme{
+  background: black;
+  color: white;
+}
+
+.light-theme{
+  background: white;
+  color: black;
+}
+
+.products{
+  display: flex;
+  padding: 30px 150px;
+  flex-wrap: wrap;
+justify-content: center;
+}
+
+.product{
+  box-shadow: 1px 2px #e3e1e1;
+  position: relative;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  flex-basis: 28.33%;
+}
+
+.product img{
+  width: 100%;
+  height: 150px;
+  max-width: 150px;
+}
+
+.category{
+  color: gray;
+  border: 1px solid gray;
+  padding: 5px;
+  position: absolute;
+  top: 19%;
+  font-size: 11px;
+
+}
+
+.title{
+  text-align: center;
+  font-weight: bold;
+}
+
+.price{
+  text-align: right;
+  font-weight: bold;
+  color: blueviolet;
+}
+
+.row{
+  display: flex;
+  justify-content: space-around;
+}
+
+button{
+  border: none;
+  padding: 10px;
+  border-radius: 3px;
+  color: rgba(255, 255, 255, 0.87);
+  background: darkgoldenrod;
+  cursor: pointer;
+}
+
+.product-details{
+  text-align: center;
+  padding: 50px 100px;
+  margin: 50px 20%;
+  border: 1px dashed darkgoldenrod;
+}
+
+.product-details img{
+  width: 15%;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-around;
+  background: goldenrod;
+}
+.toggle{
+  margin-top: 8px;
+}
+
+.menu-item{
+  color: black;
+  font-size: large;
+}
+
+.shopping-cart{
+  margin-top: 3px;
+}
+
+.description{
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+.product-category{
+  color: gray;
+  border: 1px solid gray;
+  padding: 5px;
+}
+
+.center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.back-button{
+  margin: 20px 86px;
+}
+
+.counter{
+  padding-left: 15px;
+  font-size: 20px;
+}
+
+hr{
+  background: darkgoldenrod;
+  width: 95%;
+  opacity: 0.2;
+  margin-top: 15px;
+}
+
+/* ===================== common styles =====================*/
+.small{
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.mt-5{
+  margin-top: 50px;
+}
+
+.font-20{
+  font-size: 20px;
+}
+
+.font-18{
+  font-size: 18px;
+}
+
+.mx-1{
+  margin: 0 5px;
+}
+
+.text-decoration-none{
+  text-decoration: none;
+}
+
+.bold{
+  font-weight: bold;
+}
