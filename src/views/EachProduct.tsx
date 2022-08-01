@@ -2,8 +2,6 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 import { useQuery } from "react-query";
 import { AxiosResponse } from "axios";
 import { getProduct } from "../services/ProductServices";
-import { useDispatch } from "react-redux";
-import { addItem } from "../redux/slices/cartSlice";
 import AddToCart from "../components/AddToCart";
 
 const EachProduct = () => {
@@ -11,7 +9,7 @@ const EachProduct = () => {
   const { productId } = useParams();
 
   const { data: product, isLoading } = useQuery<AxiosResponse>(
-    "product",
+    ["product"],
     () => getProduct(productId),
     { cacheTime: 0 }
   );

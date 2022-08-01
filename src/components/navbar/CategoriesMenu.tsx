@@ -5,7 +5,7 @@ import { getCategories } from "../../services/ProductServices";
 
 const CategoriesMenu = () => {
   const { data: categories } = useQuery<AxiosResponse>(
-    "categories",
+    ["categories"],
     getCategories
   );
 

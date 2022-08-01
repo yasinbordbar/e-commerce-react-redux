@@ -3,10 +3,7 @@ import { AxiosResponse } from "axios";
 import { getCategoryProducts, getProducts } from "../services/ProductServices";
 import ProductCard from "../components/ProductCard";
 import { useParams } from "react-router-dom";
-import { addItem, deleteItem } from "../redux/slices/cartSlice";
-import { useDispatch, useSelector } from "react-redux";
 import { IProduct } from "../interfaces/interfaces";
-import { RootState } from "../redux/store";
 
 const Products = () => {
   const { categoryTitle } = useParams();
